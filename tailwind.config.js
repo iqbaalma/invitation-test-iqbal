@@ -2,10 +2,15 @@
 const config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./templates/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        name: ['Dancing Script', 'sans serif'],
+        general: ['Raleway', 'sans'],
+      },
+    },
   },
   plugins: [],
 };

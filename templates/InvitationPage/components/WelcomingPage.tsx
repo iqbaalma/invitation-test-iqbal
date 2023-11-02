@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { IoMailOpen } from "react-icons/io5";
 import SecondPage from "./SecondPage";
 
@@ -18,7 +18,7 @@ export default function WelcomingPage() {
   };
 
   // key scrolling to top page
-  const pageStyle = {
+  const pageStyle: React.CSSProperties = {
     overflowY: allowScroll ? "scroll" : "hidden",
   };
 

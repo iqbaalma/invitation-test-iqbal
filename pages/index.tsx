@@ -9,18 +9,19 @@ const Index: NextPage = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Periksa lebar jendela setelah komponen dimuat
+
+    // check max window value
     const handleResize = () => {
       setIsMobile(window.innerWidth >= 900);
     };
 
-    // Tambahkan event listener untuk mengikuti perubahan ukuran jendela
+    // add window for resize
     window.addEventListener("resize", handleResize);
 
-    // Inisialisasi nilai isMobile pada saat komponen dimuat
+    // init isMobile
     handleResize();
 
-    // Ingat untuk menghapus event listener saat komponen dibongkar
+    // hidden/remove cover
     return () => {
       window.removeEventListener("resize", handleResize);
     };

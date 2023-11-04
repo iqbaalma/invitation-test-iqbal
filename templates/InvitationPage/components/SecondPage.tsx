@@ -5,12 +5,13 @@ import WelcomeImage from "@/styles/assets/welcome-image.jpeg";
 const SecondPage: React.FC = () => {
   return (
     <>
-      <div id="welcome" className="mt-[20rem]">
+    {/* Content */}
+      <div id="welcome" className="mt-[30rem]">
         <Image
           src={WelcomeImage}
           alt="welcome image"
           loading="lazy"
-          className="min-w-screen mb-[5rem]"
+          className="relative min-w-screen mb-[5rem] md:bottom-0"
         />
         <div className="relative bottom-[10rem]">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -22,6 +23,8 @@ const SecondPage: React.FC = () => {
           </svg>
           <div className="min-w-screen h-[10rem] bg-amber-900"></div>
         </div>
+
+        {/* Text SecondPage */}
         <div className="relative mt-[-21rem] flex justify-start items-center flex-col">
           <p className=" text-white font-name text-xl">Dear Mr/Mrs/Ms</p>
           <p className="text-white font-name text-xl">Family & Friends</p>
@@ -31,7 +34,10 @@ const SecondPage: React.FC = () => {
             our wedding day. Your presence will mean a lot to us.
           </p>
         </div>
+        {/* End text */}
+
       </div>
+      {/* End content */}
     </>
   );
 };

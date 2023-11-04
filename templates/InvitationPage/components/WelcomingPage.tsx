@@ -5,9 +5,11 @@ import SecondPage from "./SecondPage";
 
 export default function WelcomingPage() {
   const [allowScroll, setAllowScroll] = useState(false);
+  // error audio
   // const audioRef = useRef(null);
 
   // handle click to scrolling
+  // ID = welcome in SecondPage
   const handleButtonClick = () => {
     setAllowScroll(true);
     const sectionID = "welcome";
@@ -69,9 +71,15 @@ export default function WelcomingPage() {
         <p className="font-general text-white font-bold mt-[5rem]">
           Design by Muhammad Iqbal Maulana
         </p>
+
+        {/* direct ID to SecondPage */}
         <SecondPage />
+        {/* end */}
+
       </div>
+      {/* error */}
       {/* <audio ref={audioRef} src="../components/music.mp3" /> */}
+      {/* end error */}
     </div>
     </>
   );

@@ -18,7 +18,7 @@ export default function MobilePage() {
     }
   };
 
-  // key scrolling to top page
+  // key scrolling
   const pageStyle: React.CSSProperties = {
     overflowY: allowScroll ? "scroll" : "hidden",
   };
@@ -70,7 +70,9 @@ export default function MobilePage() {
         </p>
       <SecondPage />
       </div>
+      {/* error audio */}
       {/* <audio ref={audioRef} src="../components/music.mp3" /> */}
+      {/* end error */}
     </div>
   );
 }

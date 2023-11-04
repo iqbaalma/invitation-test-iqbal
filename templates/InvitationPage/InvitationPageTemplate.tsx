@@ -10,7 +10,7 @@ const InvitationPageTemplate: React.FC = () => {
       setIsScreenLessThan1026px(window.innerWidth <= 900);
     };
 
-    // Pastikan kode ini hanya berjalan di sisi klien (browser).
+    // is running?
     if (typeof window !== "undefined") {
       setIsScreenLessThan1026px(window.innerWidth <= 900);
       window.addEventListener("resize", handleResize);

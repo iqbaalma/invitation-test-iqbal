@@ -10,7 +10,7 @@ const SecondPage: React.FC = () => {
           src={WelcomeImage}
           alt="welcome image"
           loading="lazy"
-          className="min-w-screen"
+          className="min-w-screen mb-[5rem]"
         />
         <div className="relative bottom-[10rem]">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

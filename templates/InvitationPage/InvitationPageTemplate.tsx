@@ -7,12 +7,12 @@ const InvitationPageTemplate: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsScreenLessThan1026px(window.innerWidth < 1026);
+      setIsScreenLessThan1026px(window.innerWidth <= 900);
     };
 
     // Pastikan kode ini hanya berjalan di sisi klien (browser).
     if (typeof window !== "undefined") {
-      setIsScreenLessThan1026px(window.innerWidth < 1026);
+      setIsScreenLessThan1026px(window.innerWidth <= 900);
       window.addEventListener("resize", handleResize);
 
       return () => {

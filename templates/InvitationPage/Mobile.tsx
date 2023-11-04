@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { IoMailOpen } from "react-icons/io5";
 import { ImHeart } from "react-icons/im";
-import SecondPage from "./SecondPage";
+import SecondPage from "./components/SecondPage";
 
-export default function WelcomingPage() {
+export default function MobilePage() {
   const [allowScroll, setAllowScroll] = useState(false);
   // const audioRef = useRef(null);
 
@@ -24,9 +24,8 @@ export default function WelcomingPage() {
   };
 
   return (
-    <>
     <div
-      className="w-[35%] h-screen overflow-y-scroll bg-center"
+      className="h-screen overflow-y-scroll bg-center"
       style={{
         backgroundImage:
           "url(https://user-images.githubusercontent.com/10141928/147430939-8124ff5c-4df1-495f-a4f9-ee6eb839f03e.jpeg)",
@@ -34,10 +33,10 @@ export default function WelcomingPage() {
       }}
     >
       <div
-        className="w-full h-full bg-opacity-10 bg-black flex flex-col items-center justify-start"
+        className="w-full h-screen bg-opacity-10 bg-black flex flex-col items-center justify-start"
         style={pageStyle}
       >
-        <h1 className="mt-[5rem] mb-3 text-amber-900 text-2xl"><ImHeart /></h1>
+        <h1 className="mt-20 mb-3 text-amber-900 text-2xl"><ImHeart /></h1>
         <h1 className="text-md font-general text-amber-900">
           THE WEDDING OF
         </h1>
@@ -69,10 +68,9 @@ export default function WelcomingPage() {
         <p className="font-general text-white font-bold mt-[5rem]">
           Design by Muhammad Iqbal Maulana
         </p>
-        <SecondPage />
+      <SecondPage />
       </div>
       {/* <audio ref={audioRef} src="../components/music.mp3" /> */}
     </div>
-    </>
   );
 }

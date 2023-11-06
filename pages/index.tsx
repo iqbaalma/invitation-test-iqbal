@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import InvitationPageTemplate from "@/templates/InvitationPage/InvitationPageTemplate";
-import MobilePage from "@/templates/InvitationPage/Mobile";
+import InvitationPageTemplate from "@/templates/InvitationTempalte/InvitationPageTemplate";
+import MobilePage from "@/templates/InvitationTempalte/Mobile";
 import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import Head from "next/head";
@@ -9,7 +9,6 @@ const Index: NextPage = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-
     // check max window value
     const handleResize = () => {
       setIsMobile(window.innerWidth >= 900);
